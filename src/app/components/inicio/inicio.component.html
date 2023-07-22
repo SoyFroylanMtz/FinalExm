@@ -1,0 +1,56 @@
+<div class="container-inicio" >
+    <form class="example-form" #userForm="ngForm" (ngSubmit)="submitForm(userForm)">
+        <h1 id="tema">Crear cuenta<br></h1>
+        
+        <table class="example-full-width " cellspacing="4">
+            <p style="color: white; margin-left: 50px;"> Nombre: </p> 
+            <p style="color: white; text-align:right;margin-top: -35px;margin-right: -90px;"> Apellido: </p> 
+            <tr>
+                
+                <td ><mat-form-field class="example-full-width nb ">
+                        <mat-label>Nombre: </mat-label>
+                        <input matInput name="nombre" ngModel required></mat-form-field>
+                </td>
+                <td><mat-form-field class="example-full-width nb1">
+                    
+                        <mat-label>Apellido</mat-label>
+                        <input matInput name="apellido" ngModel required>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        <p style="color: white;  text-align: left; margin-left: -400px;"> Correo: </p> 
+        <p class="corr">
+            <mat-form-field class="example-full-width">
+                <mat-label>Correo</mat-label>
+                <input matInput placeholder="usuario@gmail.com" name="usuario.correo" [(ngModel)]="correo" required
+                    pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"/>
+            </mat-form-field>
+        </p>
+
+        <table class="example-full-width" cellspacing="2">
+            <p style="color: white; margin-left: 50px;"> Contraseña: </p> 
+            <p style="color: white; text-align:right;margin-top: -35px;margin-right: -180px;"> Confirmar contraseña: </p> 
+           
+            <tr>
+                <td><mat-form-field class="example-full-width nb">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput placeholder="Ex.hola123" name="password" [(ngModel)]="password" ngModel required>
+                    </mat-form-field></td>
+                <td><mat-form-field class="example-full-width nb1">
+                        <mat-label>Confirmar contraseña</mat-label>
+                        <input matInput type="password" placeholder="....." type="password" name="confirmPassword" [(ngModel)]="confirmPassword" ngModel required>
+                    </mat-form-field></td>
+            </tr>
+        </table>
+        <section class="button-container">
+            <div class="example-button-row">
+
+                <button (click)="submitForm(userForm)" mat-fab extended color="warn"><mat-icon>favorite</mat-icon>CREAR CUENTA
+                </button>
+            </div>
+        </section>
+    </form>
+
+
+</div>

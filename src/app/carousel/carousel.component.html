@@ -1,0 +1,17 @@
+<div class="bg">
+<div class="slider-container" *ngIf="popularMovies.length > 0">
+    
+    <div class="slider" *ngFor="let movie of popularMovies; let i = index" [hidden]="i !== currentImageIndex">
+        <div class="titulo"><h1>TOP 10</h1></div>
+        <div class="descripcion">
+            <h3>{{ movie.title }}</h3>
+         <p >{{ movie.overview }}</p>
+        </div>
+      <div class="slide">
+        <div class="number">{{ i + 1 }}</div>
+        <img [src]="getCurrentImageUrl()" alt="{{ movie.title }}" />
+      </div>
+    </div>
+  </div>
+</div>
+        

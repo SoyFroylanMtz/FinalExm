@@ -1,0 +1,17 @@
+<h2>Listado de Películas</h2>
+
+<div class="movie-grid-container">
+  <div class="movie-card" *ngFor="let movie of movies">
+    <img [src]="getImageUrl(movie.poster_path)" alt="{{ movie.title }}" />
+    <div class="movie-details">
+      <h3>{{ movie.title }}</h3>
+      <p>Calificación: {{ movie.vote_average }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="pagination">
+  <button [disabled]="currentPage === 1" (click)="onPageChange(currentPage - 1)">Anterior</button>
+  <span>Página {{ currentPage }} de {{ totalPages }}</span>
+  <button [disabled]="currentPage === totalPages" (click)="onPageChange(currentPage + 1)">Siguiente</button>
+</div>

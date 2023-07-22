@@ -1,0 +1,87 @@
+
+
+.container-examen {
+  background-image: url("fondo-emx.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative; /* Asegura que la posición del contenedor sea relativa */
+
+  /* Agrega la capa oscura con un fondo semi-transparente */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad */
+  }
+}
+
+/* Estilos para el título */
+
+#tema{
+  font-weight:bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 30px;
+  color: pink;
+}
+/* Estilos para el párrafo */
+#parrafo {
+  color:white;
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+.example-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.932);
+  border-radius: 20px;
+}
+.marg{
+  margin-left: 0;
+  margin-right: 170px;
+}
+.example-form .example-full-width {
+  width: 85%;
+  margin-bottom: 15px;
+}
+
+/* Estilos para los botones */
+.button-container {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.example-button-row button {
+  padding: 12px 40px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón "Crear cuenta" */
+.boton-contraseña {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.margen{
+  
+  margin-right: -50px;
+}
+.boton-contraseña button {
+  color: #385898;
+  text-decoration: underline;
+}
