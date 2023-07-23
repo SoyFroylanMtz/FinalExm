@@ -1,0 +1,55 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  /* Estilos para la sección de la foto de perfil y nombre */
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-top: 20px; /* Ajusta el valor según el espacio deseado */
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd; /* Puedes establecer un color de fondo temporal */
+    /* Agrega estilos adicionales para ajustar la imagen si es necesario */
+  }
+  
+  .profile-name {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    /* Agrega estilos adicionales para ajustar el nombre si es necesario */
+    border-bottom: 3px solid #333; /* Línea más oscura después del nombre */
+    padding-bottom: 30px; /* Ajusta el espaciado entre el texto y la línea */
+    width: 100%;
+    border-color: white;
+  }
+  .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logout-button {
+    margin-left: auto;
+  }
+  

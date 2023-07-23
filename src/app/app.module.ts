@@ -33,6 +33,7 @@ import { UserdetailComponent } from './components/userdetail/userdetail.componen
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
 import { ListaComponent } from './lista/lista.component';
+import { Elemento4Component } from './elemento4/elemento4.component';
 
 
 
@@ -48,7 +49,8 @@ import { ListaComponent } from './lista/lista.component';
     UsersComponent,
     UserdetailComponent,
     Elemento3Component,
-    ListaComponent
+    ListaComponent,
+    Elemento4Component
     
   ],
   imports: [

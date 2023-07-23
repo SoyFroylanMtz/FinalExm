@@ -33,6 +33,9 @@ export class Elemento3Component implements OnInit {
   logout(){
     this.router.navigate(['/examen']);
   }
+  cartelera(){
+    this.router.navigate(['/cartelera']);
+  }
   
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(

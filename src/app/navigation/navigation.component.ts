@@ -33,7 +33,9 @@ export class NavigationComponent implements OnInit {
   logout(){
     this.router.navigate(['/examen']);
   }
-  
+  cartelera(){
+    this.router.navigate(['/cartelera']);
+  }
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),

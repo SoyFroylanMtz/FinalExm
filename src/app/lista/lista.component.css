@@ -1,0 +1,38 @@
+h2 {
+    color: #2196f3;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crear cuadrícula con columnas de tamaño mínimo de 200px */
+    gap: 20px; /* Espacio entre las celdas */
+  }
+  
+  .movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+  }

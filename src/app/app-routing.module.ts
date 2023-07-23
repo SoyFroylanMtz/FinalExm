@@ -12,6 +12,7 @@ import { Elemento2Component } from './elemento2/elemento2.component';
 import { UsersComponent } from './components/users/users.component';
 import { UserdetailComponent } from './components/userdetail/userdetail.component';
 import { Elemento3Component } from './elemento3/elemento3.component';
+import { Elemento4Component } from './elemento4/elemento4.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
       {
         path:'peliculas',
         component: Elemento2Component
+      },
+      {
+        path:'cartelera',
+        component: Elemento4Component
       },
       {path:'users', component: Elemento3Component },
   {path:'user/:uuid', component: UserdetailComponent },

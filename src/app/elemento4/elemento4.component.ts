@@ -6,11 +6,11 @@ import { map, shareReplay } from 'rxjs/operators';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-elemento1',
-  templateUrl: './elemento1.component.html',
-  styleUrls: ['./elemento1.component.css']
+  selector: 'app-elemento4',
+  templateUrl: './elemento4.component.html',
+  styleUrls: ['./elemento4.component.css']
 })
-export class Elemento1Component implements OnInit {
+export class Elemento4Component implements OnInit{
   private breakpointObserver = inject(BreakpointObserver);
 
   constructor(private router: Router) { }
@@ -26,17 +26,17 @@ export class Elemento1Component implements OnInit {
     this.router.navigate(['/peliculas']);
     
   }
-  logout(){
-    this.router.navigate(['/examen']);
-  }
   contacto(){
     this.router.navigate(['/users']);
     
   }
+  logout(){
+    this.router.navigate(['/examen']);
+  }
   cartelera(){
     this.router.navigate(['/cartelera']);
   }
-
+  
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
@@ -46,4 +46,5 @@ export class Elemento1Component implements OnInit {
     
 
     
+
 }

@@ -4,9 +4,9 @@
         <p style="color: white;">Ingrese su correo</p>
         <p class="margen">
             <mat-form-field class="example-full-width marg">
-                <mat-label >Correo</mat-label>
+                <mat-label>Correo</mat-label>
                 <input matInput placeholder="usuario@gmail.com" name="usuario.correo" [(ngModel)]="correo" required
-                    pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"/>
+                    pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" />
             </mat-form-field>
         </p>
         <p style="color: white;">Ingrese su contraseña</p>
@@ -20,19 +20,15 @@
         </table>
         <section class="button-container">
             <div class="example-button-row">
-
-                <button (click)="submitForm(userForm)" mat-fab extended color="primary"><mat-icon>favorite</mat-icon> INGRESAR
+                <button (click)="submitForm(userForm)" mat-fab extended color="primary"><mat-icon>favorite</mat-icon>
+                    INGRESAR
                     AL API </button>
             </div>
         </section>
         <section class="boton-contraseña">
             <div class="example-button-row">
-
-              <button (click)="registro()" mat-button>Crear cuenta</button>
-              
+                <button (click)="registro()" mat-button>Crear cuenta</button>
             </div>
-          </section>
+        </section>
     </form>
-
-
 </div>

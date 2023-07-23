@@ -7,10 +7,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-
 import { MatDialog, MatDialogRef, MatDialogModule } from '@angular/material/dialog';
-
-
 import { ReactiveFormsModule } from '@angular/forms';
 import { DialogComponent } from 'src/app/dialog/dialog.component';
 
@@ -38,19 +35,15 @@ export class InicioComponent implements OnInit {
   constructor(private router: Router, public dialog: MatDialog) { }
 
   ngOnInit(): void {
-
   }
-
   submitForm(form: NgForm) {
     if (form.invalid) {
       this.openDialog('0ms', '0ms');
       return;
-
     }
     console.log('Formulario válido. Datos enviados:', form.value);
     this.ValidarContraseña();
   }
-
   navigation(){
     if (!this.isLoading) {
       this.isLoading = true;
@@ -58,7 +51,6 @@ export class InicioComponent implements OnInit {
         this.router.navigate(['/navigation']);
       }, 2000);
     }
-
   }
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(DialogComponent, {
@@ -66,7 +58,6 @@ export class InicioComponent implements OnInit {
       enterAnimationDuration,
       exitAnimationDuration,
     });
-
   }
   openPasswordMismatchDialog() {
     this.dialog.open(DialogComponent, {
@@ -83,8 +74,4 @@ export class InicioComponent implements OnInit {
     }
   }
 }
-
-
-
-
 export class InputFormExample { }
